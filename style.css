@@ -1,0 +1,138 @@
+:root {
+  --bg: #f8f9fa;
+  --text: #333;
+  --card: #ffffff;
+  --accent: #007bff;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #f1f1f1;
+  --card: #1e1e1e;
+  --accent: #66b2ff;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.perfil {
+  text-align: center;
+}
+
+.perfil img {
+  border-radius: 50%;
+  width: 120px;
+  border: 3px solid var(--accent);
+}
+
+#modoToggle {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 10px;
+  background: var(--accent);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#modoToggle:hover {
+  opacity: 0.8;
+}
+
+section {
+  background: var(--card);
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+  border-left: 4px solid var(--accent);
+  padding-left: 8px;
+}
+
+h2 {
+  border-left: 4px solid var(--accent);
+  padding-left: 8px;
+}
+
+/* 🔧 Estilo das habilidades */
+.habilidade {
+  margin-bottom: 15px;
+}
+
+.habilidade span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.barra {
+  background: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progresso {
+  background: var(--accent);
+  color: white;
+  text-align: right;
+  padding-right: 10px;
+  height: 25px;
+  border-radius: 10px;
+  animation: preencher 2s ease-in-out;
+}
+
+@keyframes preencher {
+  from { width: 0; }
+  to { width: var(--largura); }
+}
+
+
+.card {
+  background: var(--accent);
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.detalhes {
+  display: none;
+  margin-top: 8px;
+  font-size: 0.9em;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: var(--card);
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+}
