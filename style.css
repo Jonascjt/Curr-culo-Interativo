@@ -40,7 +40,7 @@ header {
 
 .perfil img {
   border-radius: 50%;
-  width: 120px;
+  width: 220px;
   border: 3px solid var(--accent);
 }
 
@@ -136,3 +136,4 @@ footer {
   border-top: 1px solid #ccc;
   margin-top: 20px;
 }
+
